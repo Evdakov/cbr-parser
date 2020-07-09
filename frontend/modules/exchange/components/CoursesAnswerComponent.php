@@ -20,7 +20,7 @@ class CoursesAnswerComponent
         try {
             return $this->source->nominal.' '.$this->source->name
                 .' '.LangHelper::num2word((int)$this->source->nominal, ['равен', 'равны', 'равны'])
-                .' '.$this->source->value.' '.LangHelper::num2word((int)$this->source->value, ['рубль', 'рубля', 'рублей']);
+                .' '.$this->source->value.' '.LangHelper::num2word((int)$this->source->value, ['рублю', 'рублям', 'рублям']);
         } catch (\Exception $e) {
             return 'Не удалось получить курс. Источник данных недоступен.';
         }

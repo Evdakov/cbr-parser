@@ -36,13 +36,15 @@ class ExchangeController extends ActiveController
         $behaviors['contentNegotiator']['formats']['text/html'] = Response::FORMAT_JSON;
 
         $behaviors['authenticator']['class'] = HttpHeaderAuth::class;
-        //$behaviors['authenticator']['pattern'] = '123321';
 
         return $behaviors;
     }
 
-    public function checkAccess($action, $model = null, $params = [])
+    protected function verbs()
     {
-
+        return [
+            'index' => ['GET', 'HEAD'],
+            'view' => ['GET', 'HEAD'],
+        ];
     }
 }

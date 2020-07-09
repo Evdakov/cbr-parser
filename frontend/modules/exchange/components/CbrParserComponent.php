@@ -25,7 +25,7 @@ class CbrParserComponent extends Component
         }
     }
 
-    public function getData()
+    public function getData() :array
     {
         $this->getCbrData();
 

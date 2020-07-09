@@ -21,9 +21,10 @@ class ViewAction extends \yii\rest\ViewAction
 
         $model->attributes = $item;
         if($model->validate()) {
+
             return new ArrayDataProvider([
                 'allModels' => [
-                    $model->code => (new CoursesAnswerComponent($model))->html()
+                    [$model->code => (new CoursesAnswerComponent($model))->html()]
                 ]
             ]);
         } else {

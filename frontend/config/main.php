@@ -43,7 +43,7 @@ return [
             'showScriptName' => false,
             'rules' => [
                 'exchange' => 'exchange/exchange/index',
-                'exchange/exchanges/<id:[\w-]+>' => 'exchange/exchange/view',
+                'exchange/<id:[\w-]+>' => 'exchange/exchange/view',
             ],
         ],
     ],
