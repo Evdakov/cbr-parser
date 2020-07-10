@@ -34,6 +34,6 @@ yii migtare
 
 Проверку работы можно произвести выполнив, например, команды
 ```
-curl -H "X-Api-Key:123321" http://tt2.ttt/exchanges
-curl -H "X-Api-Key:123321" http://tt2.ttt/exchanges/USD
+curl -H "X-Api-Key:123321" http://tt2.ttt/exchange
+curl -H "X-Api-Key:123321" http://tt2.ttt/exchange/USD
 ```
